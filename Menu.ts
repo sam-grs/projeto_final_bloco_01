@@ -1,5 +1,5 @@
 import * as readlineSync from "readline-sync";
-import { colors } from "src/utils";
+import { colors } from "./src/utils";
 
 function menuInformation() {
   console.log(colors.fg.magentastrong);
@@ -17,7 +17,7 @@ function menuInformation() {
 }
 
 export function main() {
-  // depois ver qual é const ou nao
+  // const?
   let option, id, type, quantity, price: number;
   let name, brand: string;
   // const store: StoreController = new StoreController();
