@@ -20,7 +20,7 @@ export class StoreController implements StoryRepository {
     if (searchProduct !== null) {
       searchProduct.visualize();
     } else {
-      console.log("\n Produto não encontrado");
+      console.log("\n Produto não encontrado!");
     }
   }
 
@@ -30,7 +30,7 @@ export class StoreController implements StoryRepository {
       this.productList[this.productList.indexOf(searchAccount)] = product;
       console.log("\n Produto atualizado!");
     } else {
-      console.log("\n Produto não encontrado");
+      console.log("\n Produto não encontrado!");
     }
   }
 
@@ -40,7 +40,7 @@ export class StoreController implements StoryRepository {
       this.productList.splice(this.productList.indexOf(searchProduct), 1);
       console.log("\n Produto deletado!");
     } else {
-      console.log("\n Produto não encontrado");
+      console.log("\n Produto não encontrado!");
     }
   }
 

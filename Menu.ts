@@ -18,14 +18,9 @@ function menuInformation() {
 }
 
 export function main() {
-  // const?
-  let option, id, type, quantity, price: number; // mudar o type
+  let option, id, quantity, price: number;
   let name, brand: string;
   const store: StoreController = new StoreController();
-
-  store.register(
-    new Product(store.generateNumber(), "teclado", 1, 1, "BW-kb1", 300)
-  );
 
   while (true) {
     menuInformation();
@@ -50,7 +45,7 @@ export function main() {
       console.log("Digite a marca do produto: ");
       brand = readlineSync.question("");
       console.log("Digite o preço do produto: ");
-      price = readlineSync.questionInt("");
+      price = readlineSync.questionFloat("");
 
       store.register(
         new Product(store.generateNumber(), name, 1, quantity, brand, price)
@@ -86,7 +81,7 @@ export function main() {
       console.log("Digite a marca do produto: ");
       brand = readlineSync.question("");
       console.log("Digite o preço do produto: ");
-      price = readlineSync.questionInt("");
+      price = readlineSync.questionFloat("");
 
       store.update(new Product(id, name, 1, quantity, brand, price));
       keyPress();

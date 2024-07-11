@@ -35,6 +35,6 @@ export class Product extends Store {
   public visualize() {
     super.visualize();
     console.log(`Marca do produto: ${this._brand}`);
-    console.log(`Preço do produto: ${this._price}`);
+    console.log(`Preço do produto: ${this._price.toFixed(2)}`);
   }
 }
