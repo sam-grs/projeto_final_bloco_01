@@ -1,4 +1,5 @@
-class Product extends Store {
+import { Store } from "./Store";
+export class Product extends Store {
   private _brand: string;
   private _price: number;
 

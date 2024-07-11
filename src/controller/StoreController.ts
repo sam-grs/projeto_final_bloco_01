@@ -1,4 +1,6 @@
-class StoreController implements StoryRepository {
+import { Store } from "../model";
+import { StoryRepository } from "../repository";
+export class StoreController implements StoryRepository {
   private productList: Array<Store> = new Array<Store>();
   public id: number = 0;
 
@@ -26,9 +28,9 @@ class StoreController implements StoryRepository {
     let searchAccount = this.searchList(product.id);
     if (searchAccount !== null) {
       this.productList[this.productList.indexOf(searchAccount)] = product;
-      console.log("\n Conta atualizada!");
+      console.log("\n Produto atualizado!");
     } else {
-      console.log("\n Conta não encontrada");
+      console.log("\n Produto não encontrado");
     }
   }
 

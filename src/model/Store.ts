@@ -1,4 +1,4 @@
-abstract class Store {
+export abstract class Store {
   private _id: number;
   private _name: string;
   private _type: number;
@@ -43,11 +43,11 @@ abstract class Store {
   public visualize(): void {
     // let type: string = "";
 
-    // if (this.type == 1) type = "Conta Corrente";
-    // else type = "Conta Poupança";
+    // if (this.type == 1) type = "Produto";
+    // else type = "Cliente";
 
     console.log("****************************************");
-    console.log("Loja");
+    console.log("Produto");
     console.log("****************************************");
     console.log(`Número do produto: ${this._id}`);
     console.log(`Nome: ${this.name}`);
